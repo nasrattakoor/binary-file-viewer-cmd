@@ -18,6 +18,7 @@ int main()
 	if (!file.is_open())
 	{
 		cout << "File could not be opened." << endl;
+		cin.get(); // extracts \n
 		cin.get();
 		return -1;
 	}
@@ -31,5 +32,6 @@ int main()
 		ss << "[" << to_string(contents[i]) << "] ";
 	}
 	cout << ss.str();
+	cin.get();
 	cin.get();
 }
