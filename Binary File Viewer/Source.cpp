@@ -18,6 +18,7 @@ int main()
 	if (!file.is_open())
 	{
 		cout << "File could not be opened." << endl;
+		cin.get();
 		return -1;
 	}
 
